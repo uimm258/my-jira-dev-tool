@@ -9,77 +9,77 @@ export const taskTypes = [
 
 export const tags = [
   {
-    name: "初始",
+    name: "Init",
   },
   {
-    name: "中期",
+    name: "Mid",
   },
   {
-    name: "结项",
+    name: "End",
   },
 ];
 
 export const epics = [
   {
-    name: "骑手物料表单开发",
+    name: "Task1",
     start: new Date("2020-12-10").getTime(),
-    end: new Date("2021-01-11").getTime(),
-  },
+    end: new Date("2021-01-11").getTime()
+  }, 
   {
-    name: "骑手地图开发",
+    name: "Task2",
     start: new Date("2021-01-12").getTime(),
-    end: new Date("2021-02-14").getTime(),
-  },
+    end: new Date("2021-02-14").getTime()
+  }, 
   {
-    name: "骑手地图开发",
+    name: "Task3",
     start: new Date("2021-01-12").getTime(),
-    end: new Date("2021-02-14").getTime(),
-  },
+    end: new Date("2021-02-14").getTime()
+  }
 ];
 
 export const kanbans = [
   {
-    name: "待完成",
-  },
+    name: "To Do"
+  }, 
   {
-    name: "开发中",
-  },
+    name: "In Progress"
+  }, 
   {
-    name: "已完成",
-  },
+    name: "Done"
+  }
 ];
 
 export const users = [
   {
-    name: "高修文",
-    organization: "外卖组",
-  },
+    name: "Patrick",
+    organization: "HR/Acc"
+  }, 
   {
-    name: "熊天成",
-    organization: "外卖组",
-  },
+    name: "Adam",
+    organization: "HR/Acc"
+  }, 
   {
-    name: "郑华",
-    organization: "总部组",
-  },
+    name: "JR",
+    organization: "CS"
+  }, 
   {
-    name: "王文静",
-    organization: "中台组",
-  },
+    name: "David",
+    organization: "IT"
+  }
 ];
 
 export const projects = [
   {
-    name: "快递管理",
+    name: "HR",
     personId: 1,
-    organization: "快递组",
-    created: 1604989757139,
-  },
+    organization: "HR/Acc Team",
+    created: 1604989757139
+  }
 ];
 
 export const tasks = [
   {
-    name: "管理注册界面开发",
+    name: "Task1",
     tags: [1, 2],
     reporterId: 1,
     processorId: 2,
@@ -87,10 +87,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "请尽快完成",
-  },
+    note: "This is the first important note"
+  }, 
   {
-    name: "管理登录界面开发",
+    name: "Task2",
     tags: [2],
     reporterId: 1,
     processorId: 2,
@@ -98,10 +98,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "请使用JWT完成",
-  },
+    note: "This is the second important note"
+  }, 
   {
-    name: "单元测试",
+    name: "Task3",
     tags: [1],
     reporterId: 1,
     processorId: 2,
@@ -109,10 +109,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "",
-  },
+    note: ""
+  }, 
   {
-    name: "性能优化",
+    name: "Task4",
     tags: [1],
     reporterId: 1,
     processorId: 2,
@@ -120,10 +120,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "",
-  },
+    note: ""
+  }, 
   {
-    name: "权限管理界面开发",
+    name: "Task5",
     tags: [1],
     reporterId: 1,
     processorId: 2,
@@ -131,10 +131,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "",
-  },
+    note: ""
+  }, 
   {
-    name: "UI开发",
+    name: "Task5",
     tags: [1],
     reporterId: 1,
     processorId: 2,
@@ -142,10 +142,10 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "",
-  },
+    note: ""
+  }, 
   {
-    name: "自测",
+    name: "Task6",
     tags: [1],
     reporterId: 1,
     processorId: 2,
@@ -153,6 +153,6 @@ export const tasks = [
     kanbanId: 1,
     favorite: true,
     typeId: 1,
-    note: "",
-  },
+    note: ""
+  }
 ];

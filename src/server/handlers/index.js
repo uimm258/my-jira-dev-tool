@@ -33,7 +33,7 @@ export const handlers = [
     async resolver(req, res, ctx) {
       try {
         if (shouldFail(req)) {
-          throw new Error("请求失败，请检查 jira-dev-tool 的设置");
+          throw new Error("Request Failed，Please check jira-dev-tool");
         }
         const result = await handler.resolver(req, res, ctx);
         return result;

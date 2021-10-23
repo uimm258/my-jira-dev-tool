@@ -25,7 +25,7 @@ export const DevTool = () => {
             zIndex: 9999
           }}
         >
-          <Tooltip title={'点击使用开发者控制台'}>
+          <Tooltip title={'Click to Start the Developer Tool'}>
             <SettingTwoTone
               style={{ fontSize: '22px' }}
               onClick={() => setVisible(true)}
@@ -41,13 +41,13 @@ export const DevTool = () => {
         key={'bottom'}
         height={'40%'}
       >
-        <Text type="secondary">开发者控制台</Text>
+        <Text type="secondary">Developer Control Panel</Text>
         <Tabs defaultActiveKey="1">
           <TabPane
             tab={
               <span>
                 <SettingOutlined />
-                控制台
+                Control Panel
               </span>
             }
             key="1"
@@ -58,14 +58,14 @@ export const DevTool = () => {
             <div
               style={{ marginBottom: '0.3rem', display: 'flex', justifyContent: 'space-between' }}
             >
-              <label>请求最短时间</label>
+              <label>Request Shortest Timeout</label>
               <RequestTime />
             </div>
             <div
               className={'form-item'}
               style={{ marginBottom: '0.3rem', display: 'flex', justifyContent: 'space-between' }}
             >
-              <label>请求失败比例</label>
+              <label>Request Failed Count</label>
               <FailureRate />
             </div>
           </TabPane>
@@ -73,7 +73,7 @@ export const DevTool = () => {
             tab={
               <span>
                 <StopOutlined />
-                异步请求失败设置
+                Async Request Failure Setting
               </span>
             }
             key="2"

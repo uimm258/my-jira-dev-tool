@@ -64,7 +64,7 @@ export const FailRule = () => {
           />
         </Form.Item>
         <Form.Item>
-          <Button htmlType={'submit'}>添加</Button>
+          <Button htmlType={'submit'}>Add</Button>
         </Form.Item>
       </Form>
       <List
@@ -74,11 +74,11 @@ export const FailRule = () => {
           <List.Item
             actions={[
               <a onClick={() => handleRemoveClick(index)} key="delete">
-                删除
+                Delete
               </a>
             ]}
           >
-            <Text mark> 请求方法：{item.requestMethod || '无'} </Text>
+            <Text mark> Request Method：{item.requestMethod || '无'} </Text>
             <Typography.Text>URL: {item.urlMatch || '无'}</Typography.Text>
           </List.Item>
         )}
