@@ -23,13 +23,6 @@ export const bootstrap = (id) => {
   const tagIds = tagDB.queryByOwnerId(id).map(pickId);
   const typeIds = taskTypeDB.queryByOwnerId(id).map(pickId);
 
-  // projectIds.forEach(projectId => {
-  //   kanbanDB.push(assignId(id, initialData.kanbans, { projectId }));
-  // });
-  // projectIds.forEach(projectId => {
-  //   taskDB.push(assignId(id, initialData.tasks, { projectId }));
-  // });
-
   projectDB.queryByOwnerId(id).forEach((project) =>
     projectDB.update(project.id, {
       personId: userIds.random(),
